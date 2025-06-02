@@ -1,0 +1,14 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mern-realty-api
+  namespace: mern-realty-staging
+spec:
+  template:
+    spec:
+      containers:
+      - name: mern-realty-api
+        image: famasboy888/mern-realty-api:1.1.8-staging.883860d
+        envFrom:
+        - secretRef:
+            name: api-secrets

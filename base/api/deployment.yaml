@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mern-realty-api
+  labels:
+    app: mern-realty-api
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: mern-realty-api
+  template:
+    metadata:
+      labels:
+        app: mern-realty-api
+    spec:
+      containers:
+      - name: mern-realty-api
+        image: famasboy888/mern-realty-api:1.6.0
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 3000

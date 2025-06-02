@@ -1,0 +1,25 @@
+resources:
+- ../../base
+- api/api-secret.yaml
+- client/client-secret.yaml
+- namespace.yaml
+
+namespace: mern-realty-production
+
+patches:
+# API
+- path: api/patch.yaml
+  target:
+    kind: Deployment
+    name: mern-realty-api
+
+# Client
+- path: client/patch.yaml
+  target:
+    kind: Deployment
+    name: mern-realty-client
+
+- path: client/client-service-patch.yaml
+  target:
+    kind: Service
+    name: client-service

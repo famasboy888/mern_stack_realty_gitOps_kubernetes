@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mern-realty-client
+  labels:
+    app: mern-realty-client
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: mern-realty-client
+  template:
+    metadata:
+      labels:
+        app: mern-realty-client
+    spec:
+      containers:
+      - name: mern-realty-client
+        image: famasboy888/mern-realty-client:1.4.0
+        ports:
+        - containerPort: 80
