@@ -5,6 +5,7 @@ metadata:
   labels:
     app: mern-realty-api
 spec:
+  revisionHistoryLimit: 3
   replicas: 2
   selector:
     matchLabels:
