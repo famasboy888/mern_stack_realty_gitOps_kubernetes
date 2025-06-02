@@ -7,7 +7,7 @@ namespace: mern-realty-dev
 images:
   #API
   - name: famasboy888/mern-realty-api
-    newTag: 1.6.0-dev.175b703
+    newTag: 1.6.0-dev.13d2037
   #Client
   - name: famasboy888/mern-realty-client
     newTag: 1.4.0-dev.175b703
