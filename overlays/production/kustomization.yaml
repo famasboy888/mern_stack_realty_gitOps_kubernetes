@@ -6,6 +6,15 @@ resources:
 
 namespace: mern-realty-production
 
+images:
+#API
+- name: famasboy888/mern-realty-api
+  newTag: 1.6.0
+
+#Client
+- name: famasboy888/mern-realty-client
+  newTag: 1.4.0
+
 patches:
 # API
 - path: api/patch.yaml

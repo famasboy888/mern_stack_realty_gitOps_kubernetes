@@ -6,6 +6,15 @@ resources:
 
 namespace: mern-realty-dev
 
+images:
+#API
+- name: famasboy888/mern-realty-api
+  newTag: 1.5.0-dev.ada2b90
+
+#Client
+- name: famasboy888/mern-realty-client
+  newTag: 1.3.0-dev.ada2b90
+
 patches:
 # API
 - path: api/patch.yaml

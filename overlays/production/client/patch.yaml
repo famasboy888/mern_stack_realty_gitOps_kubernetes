@@ -8,7 +8,6 @@ spec:
     spec:
       containers:
       - name: mern-realty-client
-        image: famasboy888/mern-realty-client:1.4.0
         envFrom:
         - secretRef:
             name: client-secrets
