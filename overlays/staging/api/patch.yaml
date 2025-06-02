@@ -8,7 +8,7 @@ spec:
     spec:
       containers:
       - name: mern-realty-api
-        image: famasboy888/mern-realty-api:1.1.8-staging.883860d
+        image: famasboy888/mern-realty-api:1.5.0-staging.f0d7f32
         envFrom:
         - secretRef:
             name: api-secrets
