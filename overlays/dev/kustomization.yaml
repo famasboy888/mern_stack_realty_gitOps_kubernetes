@@ -10,7 +10,7 @@ images:
     newTag: 1.6.0-dev.175b703
   #Client
   - name: famasboy888/mern-realty-client
-    newTag: 1.3.0-dev.ada2b90
+    newTag: 1.4.0-dev.175b703
 patches:
   # API
   - path: api/patch.yaml
