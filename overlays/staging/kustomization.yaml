@@ -1,34 +1,28 @@
 resources:
-- ../../base
-- api/api-secret.yaml
-- client/client-secret.yaml
-- namespace.yaml
-
+  - ../../base
+  - api/api-secret.yaml
+  - client/client-secret.yaml
+  - namespace.yaml
 namespace: mern-realty-staging
-
 images:
-#API
-- name: famasboy888/mern-realty-api
-  newTag: 1.5.0-staging.f0d7f32
-
-#Client
-- name: famasboy888/mern-realty-client
-  newTag: 1.3.0-staging.f0d7f32
-
+  #API
+  - name: famasboy888/mern-realty-api
+    newTag: 1.6.0-staging.c29da84
+  #Client
+  - name: famasboy888/mern-realty-client
+    newTag: 1.3.0-staging.f0d7f32
 patches:
-# API
-- path: api/patch.yaml
-  target:
-    kind: Deployment
-    name: mern-realty-api
-
-# Client
-- path: client/patch.yaml
-  target:
-    kind: Deployment
-    name: mern-realty-client
-
-- path: client/client-service-patch.yaml
-  target:
-    kind: Service
-    name: client-service
+  # API
+  - path: api/patch.yaml
+    target:
+      kind: Deployment
+      name: mern-realty-api
+  # Client
+  - path: client/patch.yaml
+    target:
+      kind: Deployment
+      name: mern-realty-client
+  - path: client/client-service-patch.yaml
+    target:
+      kind: Service
+      name: client-service
