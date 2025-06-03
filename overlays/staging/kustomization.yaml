@@ -10,7 +10,7 @@ images:
     newTag: 1.6.0-staging.c29da84
   #Client
   - name: famasboy888/mern-realty-client
-    newTag: 1.3.0-staging.f0d7f32
+    newTag: 1.4.0-staging.c29da84
 patches:
   # API
   - path: api/patch.yaml
